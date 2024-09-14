@@ -8,3 +8,8 @@ print(f"a: {a}, b: {b} and c: {c}")
 
 # Ignoring Values
 a, _, c = [1, 2, 3]
+
+# Unpacking Nested Structures
+data = ("Atul", (22, "Love Coding"))
+name, (dob, hobby) = data
+print(f"Name: {name}, DOB: {dob} and Hobby: {hobby}")
