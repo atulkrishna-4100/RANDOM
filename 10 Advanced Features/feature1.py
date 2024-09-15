@@ -13,3 +13,10 @@ a, _, c = [1, 2, 3]
 data = ("Atul", (22, "Love Coding"))
 name, (dob, hobby) = data
 print(f"Name: {name}, DOB: {dob} and Hobby: {hobby}")
+
+# Unpacking in Functional Arguments
+def print_names(*names): 
+    for name in names: 
+        print(name)
+
+print_names("Atul", "Aditya", "Shivendra")
