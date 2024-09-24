@@ -15,3 +15,9 @@ def greet(person: str, age: int) -> str:
         str: A greeting message.
     """
     return f"Hello, {person}! You are {age} years old."
+
+greeting_message = greet(name, age); 
+print(greeting_message)
+
+# Showing annotations
+print("Function Annotations: ", greet.__annotations__)
