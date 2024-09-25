@@ -1,3 +1,5 @@
+# Decorator
+
 def my_decorator(func): 
     def wrapper(*args, **kwargs): 
         print("Before the function execution.")
