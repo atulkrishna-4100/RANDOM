@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(193, 254, 254);
+}
+
+.card-container {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 26px auto;
+    padding: 44px;
+    text-align: center;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+}
+
+.checkbox-container-text {
+    font-size: 8.7px;
+    text-align: left;
+}
+
+.text {
+    margin: 10px;
+    color: rgba(53, 52, 52, 0.795);
+    font-size: 14px;
+}
+
+form {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-button {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-between;
+    height: 33px;
+}
+
+input[type="email"] {
+    padding-left: 14px;
+    flex-grow: 1;
+    background-color: rgb(237, 245, 251);
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+button {
+    background-color: rgba(11, 9, 9, 0.89);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 10px;
+    width: 68px;
+    text-align: center;
+}
