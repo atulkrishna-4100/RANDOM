@@ -1,0 +1,24 @@
+body {
+  background-color: #b3fffb;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.star-rating-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fcffff;
+  height: auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.star-icons svg:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}

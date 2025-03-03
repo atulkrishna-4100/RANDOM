@@ -1,0 +1,57 @@
+html {
+    font-family: Poppins, sans-serif;
+}
+
+/* h1 {
+    position: relative;
+    width: max-content;
+}
+
+h1::after {
+    content: '';
+    background: linear-gradient(to right, red, blue);
+    border-radius: 100px;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 100ms;
+}
+
+h1:hover::after {
+    width: 0;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(159, 243, 253), rgb(91, 167, 244));
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+button::after {
+    content: '';
+    background: linear-gradient(to right, #eeff06, #77ff00);
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 150ms ease-in-out;
+}
+
+button:hover::after {
+    width: 100%;
+}
