@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text API</title>
+  </head>
+  <body>
+    <h1>Poem:</h1>
+    <script>
+      catchPoem()
+        .then((response) => {
+          const para = document.createElement("p");
+          para.innerText = response;
+          document.body.append(para);
+        })
+        .catch((err) => console.error(err));
+      async function catchPoem() {
+        const response = await fetch("poem.txt");
+        return await response.text();
+      }
+    </script>
+  </body>
+</html>

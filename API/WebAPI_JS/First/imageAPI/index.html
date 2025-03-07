@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Tut_01</title>
+</head>
+<body>
+    <img src="" alt="rainbow" id="rainbow" width="400px"/>
+    <script>
+        console.log("About to fetch a rainbow...")
+
+        catchRainbow()
+            .then(response => console.log("Yay"))
+            .catch(err => console.error(err))
+
+        async function catchRainbow() {
+            const response = await fetch("https://images.pexels.com/photos/1542495/pexels-photo-1542495.jpeg?cs=srgb&dl=pexels-souvenirpixels-1542495.jpg&fm=jpg") 
+            const blob = await response.blob()
+            document.getElementById('rainbow').src = URL.createObjectURL(blob)
+        }
+    </script>
+</body>
+</html>
